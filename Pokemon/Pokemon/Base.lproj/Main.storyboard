@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CnR-AL-NtZ">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="pokemonCollectionView" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CnR-AL-NtZ">
                                 <rect key="frame" x="16" y="103" width="361" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WQd-5o-Tf2">
@@ -123,6 +123,7 @@
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yYL-nw-WiQ" customClass="CustomImageView" customModule="Pokemon" customModuleProvider="target">
                                                 <rect key="frame" x="44" y="35" width="267" height="140"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="customImageView"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="gxD-OQ-pl7">
                                                 <rect key="frame" x="16.333333333333343" y="211" width="322.33333333333326" height="50"/>
@@ -132,9 +133,11 @@
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weight" translatesAutoresizingMaskIntoConstraints="NO" id="FG9-Yd-Q93">
                                                                 <rect key="frame" x="0.0" y="0.0" width="76.333333333333329" height="50"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="weightImageView"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vz-Kj-rJO">
                                                                 <rect key="frame" x="84.333333333333343" y="0.0" width="76.333333333333343" height="50"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="weightLabel"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -146,9 +149,11 @@
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="height-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Puc-Kj-nMH">
                                                                 <rect key="frame" x="0.0" y="0.0" width="66" height="50"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="heightImageView"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQF-3X-P9X">
                                                                 <rect key="frame" x="95" y="0.0" width="65.666666666666686" height="50"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="heightLabel"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>

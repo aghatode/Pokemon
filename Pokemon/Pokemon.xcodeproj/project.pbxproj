@@ -102,6 +102,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6839CBB2BCDB4030027E40F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A6839CB92BCC2F990027E40F /* TypeCollectionViewCell.swift */,
+				A6839CB52BCC1ED00027E40F /* StatsTableViewCell.swift */,
+				A6C9D41E2BCBFE800047DFE3 /* PokemonDetailsViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A6839CBC2BCDB4200027E40F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A6C9D4202BCBFE920047DFE3 /* PokemonDetailsViewModel.swift */,
+				A6C9D4222BCC017E0047DFE3 /* StatsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		A6C9D3C82BCAD81B0047DFE3 = {
 			isa = PBXGroup;
 			children = (
@@ -197,11 +216,8 @@
 		A6C9D41D2BCBFE470047DFE3 /* PokemonDetails */ = {
 			isa = PBXGroup;
 			children = (
-				A6C9D41E2BCBFE800047DFE3 /* PokemonDetailsViewController.swift */,
-				A6C9D4202BCBFE920047DFE3 /* PokemonDetailsViewModel.swift */,
-				A6C9D4222BCC017E0047DFE3 /* StatsViewModel.swift */,
-				A6839CB52BCC1ED00027E40F /* StatsTableViewCell.swift */,
-				A6839CB92BCC2F990027E40F /* TypeCollectionViewCell.swift */,
+				A6839CBC2BCDB4200027E40F /* ViewModel */,
+				A6839CBB2BCDB4030027E40F /* view */,
 			);
 			path = PokemonDetails;
 			sourceTree = "<group>";

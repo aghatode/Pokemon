@@ -30,7 +30,9 @@ class PokemonDetailsViewController: UIViewController {
     func setupUI() {
         self.heightLabel?.text = viewModel?.height
         self.weightLabel?.text = viewModel?.weight
-        self.pokemonID?.text =  "#" + String(viewModel?.id ?? 0)
+        self.pokemonID?.text = viewModel?.namedId
+        self.statsTableView?.accessibilityIdentifier = "statsTableView"
+        self.typeCollectionView?.accessibilityIdentifier = "typeCollectionView"
         pokemonImageView?.loadImage(urlString: viewModel?.imageURL ?? "", id: String(viewModel?.id ?? 0))
         let button = UIBarButtonItem()
         button.title = "Back"

@@ -19,6 +19,7 @@ class PokemonListViewController: UIViewController {
         collectionView?.collectionViewLayout = layout
         collectionView?.delegate = self
         collectionView?.dataSource = self
+        collectionView?.accessibilityIdentifier = "pokemonCollectionView"
         setUpSearchController()
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false

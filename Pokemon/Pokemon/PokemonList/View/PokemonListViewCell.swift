@@ -14,6 +14,8 @@ class PokemonListViewCell: UICollectionViewCell {
     
     func configure(_ model: PokemonListCellViewModel) {
         self.contentView.layer.cornerRadius = 10
+        self.accessibilityIdentifier = "pokemonCell"
+        self.pokemonNameLabel?.accessibilityIdentifier = "pokemonNameLabel"
         pokemonNameLabel?.text = model.name
         pokemonImageView?.loadImage(urlString: model.imageURL ?? "", id: String(model.id))
     }
