@@ -22,6 +22,7 @@ class CustomImageView: UIImageView {
         return CGSize(width: -1.0, height: -1.0)
     }
     
+    //Checks if the image exists in cache else downloads the image from url
     func loadImage(urlString: String, id: String) {
         self.image = nil
         imageId = id

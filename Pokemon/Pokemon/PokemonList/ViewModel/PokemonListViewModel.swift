@@ -20,6 +20,7 @@ final class PokemonListViewModel: NSObject {
         super.init()
     }
     
+    //Gets list of Pokemons
     func fetchPokemon(offset: Int, onSuccess: (()->Void)?, onError: (()->Void)?){
       self.getPokemons(
             offset: offset,
@@ -45,6 +46,7 @@ final class PokemonListViewModel: NSObject {
         )
     }
     
+    //Gets pokemon details for a specific pokemon
     func getPokemons(offset: Int, onSuccess: ((PokemonListModel, [PokemonModel]) -> Void)?, onError: (() -> Void)?) {
         networkManager.getPokemons(
             offset: offset,

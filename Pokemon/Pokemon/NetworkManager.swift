@@ -9,6 +9,7 @@ import Foundation
 
 class NetworkManager {
         
+    //Gets list of Pokemons
     func getPokemons(offset: Int = 0, onSuccess: ((_ mainModel: PokemonListModel)->Void)? = nil, onError: (()->Void)? = nil){
         PokemonAPI.get(
             path: "/pokemon",
@@ -30,6 +31,7 @@ class NetworkManager {
         )
     }
     
+    //Gets pokemon details for a specific pokemon
     func searchPokemon(name: String, onSuccess: ((_ pokemonModel: PokemonModel)->Void)? = nil, onError: (()->Void)? = nil){
         PokemonAPI.get(path: "/pokemon/\(name)") { data in
             do {
